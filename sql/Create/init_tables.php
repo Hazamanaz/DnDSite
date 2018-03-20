@@ -13,7 +13,12 @@
 	}
 	
 	// SQL query
-	$sql = 	"CREATE DATABASE gamedb"
+	$sql = 	"CREATE TABLE player (
+        column1 datatype,
+        column2 datatype,
+        column3 datatype,
+       ....
+    )";
 	
 	// Execute query
 	if ($conn->query($sql) === TRUE) 

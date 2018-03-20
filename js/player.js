@@ -1,4 +1,4 @@
-// Declarations
+// ------------------------ Declarations
 var dice = {
   sides: 20,
   result: 30,
@@ -27,11 +27,14 @@ var incr = 1;
 var health;
 var healthid;
 var canrefresh = 1;
-//Main
+
+
+
+// ------------------------  Main
 window.onload = start;
 getUsers();
 
-//Functions
+// ------------------------ Functions
 function start() {
     setInterval("update();",1000);
 }
@@ -57,7 +60,7 @@ function showUser(user) {
 			document.getElementById("statcont").innerHTML = this.responseText;
 		}
 	};
-	xmlhttp.open("GET","../sql/getuser.php?n="+user,true);
+	xmlhttp.open("GET","../sql/get/getuser.php?n="+user,true);
 	xmlhttp.send();
 };
 
@@ -70,7 +73,7 @@ function getUsers(){
 			document.getElementById("users").innerHTML = this.responseText;
 		}
 	};
-	xmlhttp.open("GET","../sql/getplayers.php?",true);
+	xmlhttp.open("GET","../sql/get/getplayers.php?",true);
 	xmlhttp.send();
 	
 }

@@ -21,7 +21,7 @@ function getpics(){
             document.getElementById("picdata").innerHTML = this.responseText;
         }
     };
-    xmlhttp.open("GET","../sql/getpictures.php?",true);
+    xmlhttp.open("GET","../sql/get/getpictures.php?",true);
     xmlhttp.send();
 
 }
