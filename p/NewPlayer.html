@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>D&D Server</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        } );
+    </script>
+
+</head>
+<body>
+
+<div id = "container">
+
+    <input type ="text" style = "width: 80%;height: 10%;font-size: 8vh;" id ="users" name="users">
+
+
+    <div id = "skillid" class="skillcont" style = "width: 100%;">
+        <br/>
+        <li class="skill">
+            <h3 class="tablelabel">Strength</h3>
+            <button>-</button>
+            <input type="text" min="1" max="10" value="1" id="faders" step="1" oninput="outputUpdate(value,this.id)">
+            <button>+</button>
+            <output for="fader" id="statfaders">1</output>
+        </li>
+        <li class="skill">
+            <h3 class="tablelabel">Magic</h3>
+            <button>-</button>
+            <input type="text" min="1" max="10" value="1" id="faderm" step="1" oninput="outputUpdate(value,this.id)">
+            <button>+</button>
+            <output for="fader" id="statfaderm">1</output>
+        </li>
+
+        <li class="skill">
+            <h3 class="tablelabel">Endurance</h3>
+            <button>-</button>
+            <input type="text" min="1" max="10" value="1" id="fadere" step="1" oninput="outputUpdate(value,this.id)">
+            <button>+</button>
+            <output for="fader" id="statfadere">1</output>
+        </li>
+        <li class="skill">
+            <h3 class="tablelabel">Agility</h3>
+            <button>-</button>
+            <input type="text" min="1" max="10" value="1" id="fadera" step="1" oninput="outputUpdate(value,this.id)">
+            <button>+</button>
+            <output for="fader" id="statfadera">1</output>
+        </li>
+
+        <li class="skill">
+            <h3 class="tablelabel">Perception</h3>
+            <button>-</button>
+            <input type="text" min="1" max="10" value="1" id="faderp" step="1" oninput="outputUpdate(value,this.id)">
+            <button>+</button>
+            <output for="fader" id="statfaderp">1</output>
+        </li>
+
+        <li class="skill">
+            <h3 class="tablelabel">Charisma</h3>
+            <button>-</button>
+            <input type="text" min="1" max="10" value="1" id="faderc" step="1" oninput="outputUpdate(this.value,this.id)">
+            <button>+</button>
+            <output for="fader" id="statfaderc">1</output>
+        </li>
+
+    </div>
+
+    <br/>
+    <div id= "dicecont" >
+        <button  style = "height: 90%;width: 30%">Submit</button>
+
+    </div>
+
+    <script>
+
+        var stats = {};
+
+        var max = 24;
+        var cur = 0;
+
+        function outputUpdate(vol,id) {
+            var statid = "#stat" + id;
+
+
+            stats[id] = vol;
+
+            document.querySelector(statid).value = vol;
+        }
+
+
+    </script>
+</div>
+</body>
+</html>

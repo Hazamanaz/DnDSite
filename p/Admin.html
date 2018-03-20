@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/admin.js"></script>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        } );
+    </script>
+</head>
+<body>
+<!--div id="Password">
+     Password: <input type="password" name="password" onchange="passwordinput(this.value)"/>
+</div-->
+<div id="ADMIN">
+
+    <div id="statcont" hidden>
+        <element id = "stats" hidden>0,0,0,0,0,0,0,1</element>
+    </div>
+
+    <div id="fileDisplayArea" hidden>
+    </div>
+
+    <div id="err" hidden></div>
+
+    <!--div id="tabs" style="height: 100%;width: 100%;display: inline;float: left;">
+        <ul>
+            <li><a href="#Attack">Attack</a></li>
+            <li><a href="#Action">Action</a></li>
+            <li><a href="#Defence">Defence</a></li>
+        </ul>
+        <div id="Attack">
+            Attack page
+        </div>
+        <div id="Action">
+            Action Page
+        </div>
+        <div id="Defence">
+            Defence page
+        </div>
+
+
+    </div-->
+    <div id="players">
+        <!--input type="submit" value = "Refresh" onclick="update()"-->
+
+        <div id = "playercont">
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

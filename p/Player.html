@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>D&D Server</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id = "container">
+
+    <form>
+        <select id ="users" name="users" onchange="showUser(this.value)" >
+        </select>
+    </form>
+
+
+    <div id="statcont" hidden>
+        <element id = "stats" hidden>0,0,0,0,0,0,0,0</element>
+    </div>
+    <div id="update" hidden>
+        1
+    </div>
+    <div id="Health">
+        <div id="myBar">0</div>
+    </div>
+
+    <div id="err" hidden>
+    </div>
+
+    <br/>
+    <div class="skillcont">
+
+        <hr WIDTH="99%"\>
+        <li class="skill">
+            <h3 class="tablelabel">Strength</h3>
+            <h3 id="sh" class="tablelabel"></h3>
+        </li>
+        <li class="skill">
+            <h3 class="tablelabel">Magic</h3>
+            <h3 id="mh" class="tablelabel"></h3>
+        </li>
+        <hr WIDTH="99%"\>
+
+        <li class="skill">
+            <h3 class="tablelabel">Endurance</h3>
+            <h3 id="eh" class="tablelabel"></h3>
+        </li>
+        <li class="skill">
+            <h3 class="tablelabel">Agility</h3>
+            <h3 id="ah" class="tablelabel"></h3>
+        </li>
+        <hr WIDTH="99%"\>
+
+        <li class="skill">
+            <h3 class="tablelabel">Perception</h3>
+            <h3 id="ph" class="tablelabel"></h3>
+        </li>
+
+        <li class="skill">
+            <h3 class="tablelabel">Charisma</h3>
+            <h3 id="ch" class="tablelabel"></h3>
+        </li>
+        <hr WIDTH="99%"\>
+
+    </div>
+    <div class="skillcont">
+        <hr WIDTH="99%"\>
+        <h>Inventory</h>
+        <input class = "playeritem" type= "text" id = "item1">
+        <input class = "playeritem" type= "text" id = "item2">
+        <input class = "playeritem" type= "text" id = "item3">
+        <input class = "playeritem" type= "text" id = "item4">
+        <input class = "playeritem" type= "text" id = "item5">
+        <input class = "playeritem" type= "text" id = "item6">
+        <input class = "playeritem" type= "text" id = "item7">
+        <input class = "playeritem" type= "text" id = "item8">
+    </div>
+    <br/>
+    <div id= "dicecont">
+        <button id="dicebutton" >Roll</button>
+        <button	id="diceresult" disabled value="2">0</button>
+    </div>
+
+    <script src="../js/player.js"></script>
+</div>
+</body>
+</html>

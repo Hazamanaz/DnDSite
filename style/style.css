@@ -1,0 +1,239 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 4vmin;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #24A317;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+button:hover {background-color: #24A317}
+
+button:active {
+  background-color: #24A317;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+button:disabled {
+  background-color: lightgrey;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#container {
+	
+  max-width: 800px;
+	
+}
+
+#dicecont {
+    list-style-type: none;
+	height: 20%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    overflow: hidden;
+
+}
+#diceresult {
+
+  background-color: #eaeaea;
+  color: rgb(0, 0, 0);
+  display: inline;
+  float: left;
+  height: 80%;
+  width: 50%;
+  font-size: 9vh;
+  text-align: center;
+  box-shadow: 0 0px #ffffff;
+}
+#dicebutton {	
+  display: inline;
+  float: left;
+  height: 80%;
+  width: 50%;
+  font-size:9vh;
+  text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 2% 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+	font-size:4vh;
+	text-align: center;
+}
+
+select select {
+    width: 100%;
+    padding: 2% 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+	font-size:4vh;
+	text-align: center;
+}
+
+select select:focus {
+    outline: none;
+}
+
+div[value=Progress] {
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 0%;
+    height: 10%;
+    background-color: #24A317;
+	font-size:8vh;
+	text-align: center;
+
+}
+ul {
+  list-style-type: none;
+}
+hr {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    border-width: 1px;
+
+}
+
+iframe{
+    display: inline;
+    float: left;
+    height: 100%;
+    width: 50%;
+    margin: 0px;
+    border-width: 0px;
+
+}
+.skillcont {
+
+
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    list-style-type: none;
+    height: 55%;
+    width: 49%;
+    margin: 0;
+    padding: 0;
+    left: 10%;
+    overflow: hidden;
+
+    display: inline;
+    float: left;
+}
+
+.skill {
+	
+	
+	padding: 0px;
+    border: none;
+    border-radius: 0px;
+	list-style-type: none;
+	height: 15%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+	
+}
+.tablelabel {
+    display: inline;
+    float: left;
+    height: 100%;
+    width: 49%;
+    text-align: center;
+    font-size:3vh;
+}
+
+.skillp {
+	
+	padding: 0px;
+	padding-top: 2%;
+    border: none;
+    border-radius: 0px;
+	height: 90%;
+    width: 75%;
+	display: inline;
+	overflow: hidden;
+
+	border-radius: 12px;
+
+}
+.monhealth {
+
+    text-align: left;
+    font-size:6vh;
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    color: #941415;
+}
+
+textarea {
+    border: none;
+    text-align: left;
+    height: 49%;
+
+}
+
+.playeritem {
+
+    width: 90%;
+    height: 10%;
+}
+
+.newplaynum {
+    width: 20%;
+    height: 100%;
+    display: inline;
+    overflow: hidden;
+}
+
+.newplayerstat {
+    border-radius: 10px;
+    border: 1px solid #150405;
+    display: inline;
+    float: left;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    font-size:3vh;
+}
+
+.newinv {
+    border-radius: 10px;
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    list-style-type: none;
+    height: 55%;
+    width: 49%;
+    margin: 0;
+    padding: 0;
+    left: 10%;
+    overflow: hidden;
+
+    display: inline;
+    float: left;
+
+
+}
